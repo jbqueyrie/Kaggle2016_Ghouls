@@ -19,7 +19,7 @@ nrow(train)
 sapply(train, function(x) sum(is.na(x)))
 
 # Summary
-summary(train)
+summary(train[,-1])
 
    # Balanced data set between ghost, ghoul and goblin
 
