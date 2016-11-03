@@ -24,6 +24,9 @@ summary(train[,-1])
    # Balanced data set between ghost, ghoul and goblin
 
 
+test$color = as.numeric(train$color)
+test$color = as.numeric(test$color)
+
 # Check normality for each numeric
 plotNorm = function(data) {
   
